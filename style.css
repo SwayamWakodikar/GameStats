@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "MinecraftFont";
+  src: url("./fonts/MinecraftRegular-Bmg3.otf") format("truetype");
+}
+* {
+  font-family: "MinecraftFont", Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/mc.png);
+  background-size: cover;         /* Makes sure the image covers the screen */
+  background-position: center;    /* Keeps it centered */
+  background-repeat: no-repeat;   /* Prevents repeating */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  cursor: url("./images/Diamond\ Sword\ -\ Normal\ Select.cur"), auto;
+}
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+}
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  width: 100%;
+  height: 50px;
+
+  margin: 30px 0;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: medium;
+  padding: 20px 45px 20px 20px;
+  transition: box-shadow 0.5s ease;
+}
+.input-box input::placeholder {
+  color: rgb(255, 255, 255);
+}
+.wrapper.Rem {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0px 15px;
+}
+.Rem input {
+  accent-color: #fff;
+  margin-right: 3px;
+  margin: 20px;
+  transition: box-shadow 0.5s ease;
+}
+.wrapper .button input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  color: #ffffff;
+  font-weight: bold;
+  outline: none;
+  padding: 0;
+  margin-bottom: 15px;
+
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease;
+}
+.input-box input:hover,
+.button input:hover {
+  cursor: url(./images/diamond.cur), auto;
+}
+input[type="checkbox"]:hover,
+label[for="rem"]:hover {
+  cursor: url(./images/diamond.cur), auto;
+}
+.wrapper .button input:hover,
+.input-box input:hover,
+.Rem input:hover {
+  box-shadow: 0 0 12px 3px rgba(255, 255, 255, 0.6);
+}
+.button input {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .input-box,
+.wrapper .button {
+  padding: 0 15px;
+}
+::selection{
+  background-color: rgb(161, 218, 75);
+  color: black;
+  border-radius: 10%;
+  /* box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.6); */
+  /* transition: background-color 0.5s ease; */
+}

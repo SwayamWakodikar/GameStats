@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <audio autoplay src="./images/1-03. Subwoofer Lullaby.mp3"></audio>
+    <div class="wrapper">
+        <form action="#">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username">
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="Rem">
+                <label for="rem">
+                <input type="checkbox" name="" id="" placeholder="">
+                Remember me
+                </label>
+            </div>
+            <div class="button">
+                <a href="https://accounts.google.com/o/oauth2/v2/auth
+                ">
+                <input type="button" value="Login" id="loginBtn">
+                </a>
+            </div>
+        </form>
+    </div>
+    <script>
+        // Wait for the page to load
+        document.addEventListener("DOMContentLoaded", function () {
+          const loginButton = document.getElementById("loginBtn");
+      
+          loginButton.addEventListener("click", function (e) {
+            e.preventDefault(); // prevent actual form submission
+            alert("Logged in Successfully!!");
+          });
+        });
+      </script>
+      
+</body>
+</html>
